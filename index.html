@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Portfolio</title>
-  <!-- Link to CSS -->
+  <title>Jericho Jake Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navigation -->
   <nav>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Personal Logo">
+      <span>Jericho Jake</span>
+    </div>
     <ul>
-      <li><a href="#about">About Me</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -23,10 +26,18 @@
     <button class="menu-toggle">☰</button>
   </nav>
 
-  <!-- About Me -->
+  <!-- Hero Section -->
+  <header class="hero">
+    <img src="assets/profile.jpg" alt="Profile Image" class="profile-img">
+    <h1>Hi, I’m Jericho Jake Guevara</h1>
+    <p>Virtual E-commerce Assistant & Conversational Workflow Designer</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </header>
+
+  <!-- About -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hi, I’m Jericho Jake Guevara, a professional VA and content moderator with expertise in Shopify, admin workflows, and online teaching. I design clean workflows and engaging digital experiences.</p>
+    <p>I specialize in Shopify VA, content moderation, and online teaching. My focus is creating clean workflows and engaging digital experiences.</p>
   </section>
 
   <!-- Projects -->
@@ -59,12 +70,12 @@
   <!-- Tools -->
   <section id="tools">
     <h2>Tools</h2>
-    <div class="tools-list">
-      <span class="badge">Asana</span>
-      <span class="badge">GitHub</span>
-      <span class="badge">Netlify</span>
-      <span class="badge">Canva</span>
-      <span class="badge">Zoom</span>
+    <div class="grid">
+      <div class="card"><img src="assets/asana.png" alt="Asana"><h3>Asana</h3></div>
+      <div class="card"><img src="assets/github.png" alt="GitHub"><h3>GitHub</h3></div>
+      <div class="card"><img src="assets/netlify.png" alt="Netlify"><h3>Netlify</h3></div>
+      <div class="card"><img src="assets/canva.png" alt="Canva"><h3>Canva</h3></div>
+      <div class="card"><img src="assets/zoom.png" alt="Zoom"><h3>Zoom</h3></div>
     </div>
   </section>
 
@@ -88,7 +99,6 @@
     </form>
   </section>
 
-  <!-- Link to JS -->
   <script src="script.js"></script>
 </body>
 </html>
